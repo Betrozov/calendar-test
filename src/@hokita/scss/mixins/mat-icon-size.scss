@@ -1,0 +1,42 @@
+@mixin mat-icon-size1($size: 24px) {
+    font-size: $size !important;
+    height: $size !important;
+    width: $size !important;
+}
+
+@mixin mat-icon-size2($size: 1.0){
+    &[size="#{$size}"]{
+      font-size: 24px*$size;
+      width: 24px*$size;
+      height: 24px*$size;
+  
+      svg{
+        transform: scale($size);
+        transform-origin: left top;
+      }
+    }
+  }
+
+@mixin mat-icon-size($size: 24px){
+    
+  .mat-icon-wrapper {
+    display: inline-block;
+    height: $size !important; 
+    line-height: $size !important;
+    font-size: $size !important;
+    vertical-align: middle !important;
+  }
+
+  .mat-icon {
+    display: inline-block;
+      width: $size !important;
+      height: $size !important;
+      line-height: $size !important;
+      font-size: $size !important;
+  }
+  
+  mat-icon {
+    transform: scale($size/24px) !important;
+    transform-origin: left top;
+  }
+}

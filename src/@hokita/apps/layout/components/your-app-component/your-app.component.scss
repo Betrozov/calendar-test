@@ -1,0 +1,62 @@
+/* not too much custom css please */
+@import "src/@fuse/scss/fuse";
+
+#kids {
+
+    .header {
+
+        .search-input-wrapper {
+            max-width: 480px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            margin: 8px 0;
+            height: 192px !important;
+            min-height: 192px !important;
+            max-height: 192px !important;
+        }
+
+        .product-image {
+            overflow: hidden;
+            width: 56px;
+            height: 56px;
+            border: 3px solid rgba(0, 0, 0, 0.12);
+
+            img {
+                height: 100%;
+                width: auto;
+                max-width: none;
+            }
+        }
+
+        .subtitle {
+            margin: 6px 0 0 0;
+        }
+    }
+
+    .top-bg {
+        @include media-breakpoint-down(xs) {
+            height: 240px;
+        }
+    }
+
+    .content {
+
+        .mat-tab-group,
+        .mat-tab-body-wrapper,
+        .tab-content{
+            flex: 1 1 auto;
+            max-width: 100%;
+        }
+
+        .mat-tab-body-content {
+            display: flex;
+        }
+
+        .mat-tab-label {
+            height: 45px; //$carded-toolbar-height; // ModulWare: was 64px;
+        }
+
+    }
+
+}

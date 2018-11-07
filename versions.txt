@@ -1,0 +1,5 @@
+HOKITA-Fuse-upwork-base.yyyymmdd-HHMM
+	Your changes
+
+HOKITA-Fuse-upwork-base.20181029-1115
+	First version
