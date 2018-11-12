@@ -3,6 +3,10 @@ export const locale = {
     data: {
         'YOUR-APP': {
             'HELLO': 'Hello world!'
+        },
+        'TABS': {
+            'MONTH': 'Holidayplaner (Month)',
+            'YEAR': 'Holidayplaner (Year)'
         }
     }
 };
